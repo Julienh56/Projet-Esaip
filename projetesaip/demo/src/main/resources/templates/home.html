@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Ju lien</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+  <link th:href="@{/css/core.css}" rel="stylesheet"/>
+</head>
+
+<body>
+<div th:replace="fragments/header :: header">&nbsp;</div>
+<div class="container">
+  <div>
+    <h1>
+      Bienvenue chez Ju lien
+      <small th:text="${slogan}"></small>
+    </h1>
+    <hr/>
+  </div>
+  <div th:replace="fragments/footer :: footer"></div>
+</div>
+
+</body>
+</html>
